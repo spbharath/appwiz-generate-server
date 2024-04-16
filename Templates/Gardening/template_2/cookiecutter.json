@@ -1,0 +1,7 @@
+{
+    "app_name": "",
+    "project_name": "template_files",
+    "_copy_without_render": [
+        "*.js"
+      ]
+}
