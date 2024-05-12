@@ -1,0 +1,15 @@
+[Unit]
+Description=My RabbitMQ Consumer
+After=network.target
+
+[Service]
+User=valli
+Group=valli
+WorkingDirectory=/home/valli/testing
+ExecStart=/home/valli/testing/.venv/bin/python3 /home/valli/testing/consumer.py
+StandardOutput=file:/home/valli/testing/logs/my_consumer.log
+StandardError=file:/home/valli/testing/logs/my_consumer_error.log
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

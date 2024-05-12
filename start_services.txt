@@ -1,0 +1,7 @@
+/etc/systemd/system/rabbitmq_consumer.service
+
+sudo systemctl daemon-reload
+sudo systemctl enable rabbitmq_consumer.service
+sudo systemctl start rabbitmq_consumer.service
+sudo systemctl stop rabbitmq_consumer.service
+sudo systemctl status rabbitmq_consumer.service
